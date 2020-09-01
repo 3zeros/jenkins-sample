@@ -3,12 +3,12 @@ pipeline {
     parameters {
         string(
             name: 'COPY_SOURCE_PROJECT',
-            defaultValue: "PIpelineTest04",
+            defaultValue: "pipelineTest04",
             description: 'Name of source project for copying of artifacts.'
         )
     }
     stages{
-        stage ('delete workspace'){
+        stage('delete workspace'){
             steps {
                 deleteDir()
             }

@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
         stage('create file') {
-            step {
+            steps {
                 writeFile(file: "${FILE_NAME}_txt", text: "${OUTPUT_TEXT}")
                 sh 'ls -la'
                 echo 'it is one of the benefits when using pipeline'

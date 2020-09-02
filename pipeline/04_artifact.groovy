@@ -21,9 +21,9 @@ pipeline {
             }
         }
     }
-    // post {
-    //     success {
-    //         cleanWs()
-    //     }
-    // }
+    post {
+        success {
+            cleanWs()
+        }
+    }
 }

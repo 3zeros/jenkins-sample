@@ -1,6 +1,0 @@
-{
-    "name": "05_getFile",
-    "params": {
-        "COPY_SOURCE_PROJECT": "PIpelineTest04"
-    }
-}

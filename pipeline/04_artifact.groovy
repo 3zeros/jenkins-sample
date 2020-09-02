@@ -13,7 +13,7 @@ pipeline {
                 writeFile(file: fileName2, text: contextOfFile2)
             }
         }
-        stage('archive aartifacts'){
+        stage('archive artifacts'){
             steps {
                 echo 'save file 1, 2'
                 archiveArtifacts fileName1
@@ -21,9 +21,9 @@ pipeline {
             }
         }
     }
-    post {
-        success {
-            cleanWs()
-        }
-    }
+    // post {
+    //     success {
+    //         cleanWs()
+    //     }
+    // }
 }

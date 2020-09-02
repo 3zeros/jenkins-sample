@@ -5,13 +5,14 @@ pipeline {
             parallel {
                 stage('Test On Agent') {
                     agent {
-                        label "${AGENT_NAME}"
+                        label "${slave}"
                     }
                     steps {
                         sh 'pwd'
                     }
                 }
                 stage('Test On Master') {
+                    agent any
                     steps {
                         sh 'pwd'
                     }
